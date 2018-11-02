@@ -1,0 +1,142 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background-beer.jpeg);
+    background-size:cover;
+    color:#fff;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: #FFC85B;
+}
+
+.hops {
+    width: 225px;
+    height: 125px;
+}
+
+.nav {
+    font-family: 'Patrick Hand', cursive;
+    color: #104D59;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.home {
+    padding-left: 20px;
+}
+
+.name {
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Peralta', cursive;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+/* HOME PAGE  */
+.history {
+    /* text-align: center; */
+    background-color: white;
+    width: 80%;
+    margin-bottom: 200px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 50px;
+    border-top: 5px solid #4aaaa5;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  
+  .foot-text {
+    background-color: #5B616A;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  p.foot-text {
+    margin-top: 0;
+  }
+  
+  .media {
+    text-align: center;
+  }
+  
+  #map{
+    height: 450px;
+    width: 500px;
+  }
+
+
+
+/* FIND A BREW PAGE */
+
+.table {
+    height: 600px;
+}
+
+
+
+/* LEARN TO BREW PAGE */
+
+.beer-kits {
+    text-align: center;
+    background-color: white;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 10%;
+}
+
+.buy {
+    font-family: 'Patrick Hand', cursive;
+    color: #24242D;
+    text-align: center;
+    font-size: 50px;
+}
+
+.kit-1-image, .kit-2-image, .kit-3-image{
+    width: 300px;
+    height: 300px;
+}
+
+.kit-2-image {
+    margin-top: 35px;
+}
+
+button {
+    border-radius: 10px;
+    border-color: black;
+}
+
+.amazon {
+    width: 100px;
+    height: 40px;
+}
+
+
+.videos {
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom:100px;
+}
+.instructions, .extract, .all-grain {
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+}
