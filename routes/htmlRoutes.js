@@ -12,6 +12,7 @@ module.exports = function(app) {
   app.get("/learnbrew", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/learnbrew.html"));
   });
+
   app.get("/addbrew", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/addbrew.html"));
   });
