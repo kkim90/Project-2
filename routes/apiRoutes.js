@@ -1,24 +1,47 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  // View all Recipes
+  app.get("/api/recipes", function(req, res) {
+    db.BeerRecipe.findAll({}).then(function(dbBeerRecipe) {
+      res.json(dbBeerRecipe);
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Add new Recipe
+  app.post("/api/recipes", function(req, res) {
+    db.BeerRecipe.create({
+      name: req.body.name,
+      style: req.body.style,
+      abv: req.body.abv,
+      ibu: req.body.ibu,
+      description: req.body.description
+    }).then(function(dbBeerRecipe) {
+      res.json(dbBeerRecipe);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  // Delete Recipe
+  app.delete("/api/recipes/:id", function(req, res) {
+    db.BeerRecipe.destroy({
+      where: { 
+        id: req.params.id 
+      } 
+    }).then(function(dbBeerRecipe) {
+      res.json(dbBeerRecipe);
     });
   });
+
+// Update Recipe
+  app.put("/api/recipes", function(req, res){
+    db.BeerRecipe.update({
+      name: req.body.name,
+      style: req.body.style,
+      abv: req.body.abv,
+      ibu: req.body.ibu,
+      description: req.body.description
+    }).then(function(dbBeerRecipe){
+      res.json(dbBeerRecipe);
+    });
+  })
 };

@@ -42,7 +42,7 @@ var refreshExamples = function() {
         .attr({
           class: "list-group-item",
           "data-id": example.id
-        })
+        }).
         .append($a);
 
       var $button = $("<button>")
