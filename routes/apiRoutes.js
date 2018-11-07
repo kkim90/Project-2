@@ -33,14 +33,14 @@ module.exports = function(app) {
   });
 
   // Update Recipe
-  app.put("/api/recipes", function(req, res){
+  app.put("/api/recipes", function(req, res) {
     db.BeerRecipe.update({
       name: req.body.name,
       style: req.body.style,
       abv: req.body.abv,
       ibu: req.body.ibu,
       description: req.body.description
-    }).then(function(dbBeerRecipe){
+    }).then(function(dbBeerRecipe) {
       res.json(dbBeerRecipe);
     });
   });
