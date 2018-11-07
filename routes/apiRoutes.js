@@ -24,15 +24,15 @@ module.exports = function(app) {
   // Delete Recipe
   app.delete("/api/recipes/:id", function(req, res) {
     db.BeerRecipe.destroy({
-      where: { 
-        id: req.params.id 
-      } 
+      where: {
+        id: req.params.id
+      }
     }).then(function(dbBeerRecipe) {
       res.json(dbBeerRecipe);
     });
   });
 
-// Update Recipe
+  // Update Recipe
   app.put("/api/recipes", function(req, res){
     db.BeerRecipe.update({
       name: req.body.name,
@@ -43,5 +43,5 @@ module.exports = function(app) {
     }).then(function(dbBeerRecipe){
       res.json(dbBeerRecipe);
     });
-  })
+  });
 };
