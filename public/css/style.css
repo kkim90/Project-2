@@ -1,5 +1,5 @@
 .home-page {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/beer-bottle-tops.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/beer-bottle-tops.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background-beer.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-beer.jpeg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -207,7 +207,7 @@ p.foot-text {
 }
 
 .find-a-brew {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/American_2row.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/American_2row.jpeg);
     background-size: cover;
     /* color:#fff; */
     background-attachment: fixed;
@@ -217,9 +217,9 @@ p.foot-text {
 
 /* ADD A BREW PAGE  */
 .add-brew-page {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/beer-pint.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/beer-pint.jpg);
     background-size: cover;
-    color: #fff;
+    color: black;
     background-attachment: fixed;
 }
 
